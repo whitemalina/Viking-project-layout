@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap')
 *
     margin: 0
     padding: 0
@@ -7,6 +8,7 @@ html
     overflow-x: hidden
 body
     background: linear-gradient(180deg, #190707 0%, #210909 100%)
+    overflow-x: hidden
 .manyDot
     position: absolute
     overflow: hidden
@@ -24,7 +26,6 @@ body
         display: flex
         width: 100%
         justify-content: space-between
-        
     &__left_side
         width: 50%
         h1
@@ -72,10 +73,12 @@ body
                 transform: scale(1.2)
     &__right_side
         width: 30%
+        position: relative
         .messages
             .sms
                 cursor: pointer
                 transition: .1s
+                
                 &:nth-child(2)
                     margin-top: 20%
                 position: relative
@@ -95,6 +98,7 @@ body
                     width: 100%
             .messageText
                 display: flex
+                
                 margin-left: 2rem
                 .messageTitle
                     margin-left: 1rem
@@ -116,3 +120,311 @@ body
                 position: absolute
                 right: 1rem
                 top: 1rem
+    .white-dot
+        position: absolute
+        bottom: -30%
+        right: 0
+.features
+    display: flex
+    position: relative
+    padding: 0 182px
+    align-items: center
+    .container
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        
+        .big-text
+            p
+                user-select: none
+                z-index: -1
+                left: 0
+                top: 10%
+                position: absolute
+                font-family: 'DM Sans'
+                font-style: normal
+                font-weight: 700
+                font-size: 456px
+                line-height: 85.9%
+                letter-spacing: -0.07em
+                // 2px solid rgba(255, 255, 255, 0.07
+                color: #ffffff00
+                -webkit-text-stroke-width: 2px
+                -webkit-text-stroke-color: rgba(255, 255, 255, 0.07)
+    &__left_side
+        width: 50%
+        img
+            &:nth-child(2)
+                display: none
+            width: 80%
+    &__right_side
+        padding-left: 20%
+        width: 50%
+        .our-features
+            display: flex
+            margin-left: 1rem
+            p
+                font-family: 'Montserrat'
+                font-style: normal
+                font-weight: 700
+                font-size: 1.5rem
+                line-height: 44px
+                /* identical to box height */
+                text-shadow: 0px 0px 17px #9D0000
+                color: #C62933
+        .all-features
+            .feature
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                margin-top: 1rem
+                span
+                    height: 80px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 1rem
+                    line-height: 44px
+                    /* identical to box height */
+
+
+                    color: #FFFFFF
+
+                    width: 80px
+                    background-image: url("../img/svg/feature.svg")
+                    background-size: cover
+                    background-repeat: no-repeat
+                p
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 2rem
+                    word-break: normal
+                    line-height: 44px
+                    color: #FFFFFF
+
+.footer
+    margin-top: 160px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    a
+        &:nth-child(2)
+            text-decoration: none
+    .footer-dot
+    .footer-button
+        position: relative
+        .footer-dot
+            &__1
+                height: 20px
+                width: 20px
+                background: #C62933
+                border-radius: 100%
+                position: absolute
+            &__2
+                height: 50px
+                width: 50px
+                background: #C62933
+                border-radius: 100%
+                position: absolute
+                left: 10%
+                bottom: -80%
+        .price
+            width: 395px
+            height: 117px
+            background: #BF2121
+            box-shadow: 0px 4px 63px #5A1F1F
+            position: absolute
+            right: 10%
+            margin-top: -2rem
+            border-radius: 17px 44px 44px 44px
+            .time
+                position: absolute
+                right: 10%
+                bottom: 10%
+                color: white
+                font-family: "Montserrat"
+            p
+                padding: 21px 60px 0 60px
+                font-family: 'Montserrat'
+                font-style: normal
+                font-weight: 300
+                color: white
+                font-size: 1rem
+                line-height: 24px
+        .container
+            width: 60vw
+            
+            height: 200px
+            background: #951A1A
+            box-shadow: 0px 4px 163px 51px #571010
+            border-radius: 185px
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: .1s 
+            cursor: pointer
+            &:hover
+                box-shadow: 0px 4px 163px 91px #571010
+                transform: scale(1.05)
+
+            .button
+                width: 80%
+                height: 70%
+                background: #A81D1D
+                border-radius: 185px
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                p
+                    &:nth-child(1)
+                        font-family: 'Montserrat'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 2rem
+                        line-height: 49px
+                        color: #FFFFFF
+                    &:nth-child(2)                      
+                        font-family: 'Montserrat'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 1rem
+                        line-height: 39px
+                        color: rgba(255, 255, 255, 0.37)
+    .footer-text
+        margin-top: 10%
+        display: flex
+        justify-content: center
+        text-align: center
+        align-items: center
+        flex-direction: column
+        p
+            text-align: center
+            font-family: "Montserrat"
+            color: rgba(255, 255, 255, 0.33)
+            margin-top: 2rem
+            margin-bottom: 2rem
+            font-weight: 400
+            
+        a
+            font-family: "Montserrat"
+            color: rgba(255, 255, 255, 0.33)
+@media screen and (max-width: 1500px)
+    .big-text
+        p
+            overflow: hidden !important
+    .main-page
+        padding: 0 100px
+    .footer-dot__2
+        margin-left: 50%
+    .features
+
+        padding: 0
+@media screen and (max-width: 1330px)
+    .sms
+        .messageText
+            img
+                height: 50%
+            .messageTitle
+                span
+                    font-size: .5rem
+@media screen and (max-width: 1253px)
+    .main-page__right_side
+        display: none
+    .main-page__left_side h2
+        text-align: center
+    .main-page__left_side
+        width: 100%
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    .features__right_side
+        padding: 0
+    .footer-button
+        .container
+            width: 80vw !important
+    .big-text
+        p
+            -webkit-text-stroke-width: 1px !important
+            font-size: 400px!important
+@media screen and (max-width: 927px)
+    .our-features
+        img
+            display: none
+    .feature
+        p
+            font-size: 1.5rem !important
+
+@media screen and (max-width: 860px)
+    .features
+        .container
+            flex-direction: column !important
+    .main-page__left_side h1
+        text-align: center
+    .phone
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        img
+            display: none
+            &:nth-child(2)
+                display: block !important
+                height: auto
+                width: 80vw
+    .our-features
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+    .feature
+        br
+            display: none
+        font-size: 23rem !important
+    .features__right_side
+        width: 80%
+        font-size: 2rem
+    .features__right_side .our-features p
+        font-size: 2rem
+        padding: 2rem 0
+@media screen and (max-width: 860px)
+    .feature
+        margin-top: 1rem !important
+        flex-direction: column
+        justify-content: center !important
+        align-items: center  !important
+        text-align: center
+    .footer
+        img
+            display: none
+        .footer-text
+            margin-top: 50%
+    .footer-button
+        .container
+            height: 150px !important
+    .price
+        p
+            padding: 20px 102px 10px 30px !important
+        width: 300px !important
+    .main-page__left_side button
+        width: 80vw
+    .main-page__left_side h3
+        text-align: center
+    .main-page
+        padding: 0 1rem
+    .footer .footer-button .container .button p
+        text-align: center
+    .footer .footer-button .container .button p:nth-child(1)
+        font-size: 1.5rem
+        text-align: center
+@media screen and (max-width: 466px)
+    .footer-button
